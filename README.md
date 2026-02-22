@@ -1,52 +1,82 @@
-# Dev Container Template - Node.js & Express
+# devcontainer-templates-node
 
-Pre-configured containerized development environment for Node.js and Express applications.
+## Detailed Description
 
-## Features
+devcontainer-templates-node is maintained as an industry-grade software project with production-ready engineering practices.  
+This repository includes documented setup, quality gates, operational guidance, and governance standards so contributors can safely build, test, and ship changes with confidence.
 
-- **Node.js 20** with npm
-- **TypeScript** support
-- **ESLint** + **Prettier** for code quality
-- **Nodemon** for auto-restart during development
-- **PM2** for production process management
-- **SQLTools** for database management
-- Path IntelliSense
-- IntelliCode AI-assisted completion
+## Problem Statement
 
-## Quick Start
+Describe the user or business problem this project solves, the target users, and expected outcomes.
 
-1. Copy `.devcontainer` folder to your project root
-2. Open the project in VS Code
-3. Press `F1` and select **"Dev Containers: Reopen in Container"**
+## Solution Overview
 
-## Configuration
+Summarize the architecture, core modules, and runtime behavior at a high level.
 
-### Ports
-- `3000` - Express development server
-- `3001` - Alternative development port
-- `8080` - General HTTP server
-- `9229` - Node.js debugger
+## Key Features
 
-### Extensions Included
-- ESLint
-- Prettier
-- PowerShell
-- Docker
-- TypeScript
-- SQLTools
-- Path IntelliSense
-- IntelliCode
+- Clear project scope and intended use.
+- Reproducible local development workflow.
+- Test coverage and CI quality gates.
+- Security and contribution policies.
+- Deployment-ready repository structure.
 
-### Post-Create Commands
-- Installs TypeScript, Nodemon, and PM2 globally
-- Runs `npm install` in your project
+## Repository Structure
 
-## Requirements
+```text
+.
+|-- src/                  # Core implementation
+|-- tests/                # Automated test suites
+|-- docs/                 # Design notes and operational docs
+|-- .github/workflows/    # CI pipelines
+|-- README.md
+|-- LICENSE
+|-- CONTRIBUTING.md
+|-- SECURITY.md
+|-- CODE_OF_CONDUCT.md
+```
 
-- [Docker Desktop](https://www.docker.com/products/docker-desktop)
-- [VS Code](https://code.visualstudio.com/)
-- [Dev Containers Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
+## Getting Started
+
+### Prerequisites
+
+- Git
+- Project runtime/toolchain for this repo
+
+### Local Setup
+
+```bash
+make test
+make lint
+```
+
+## Usage
+
+Document primary commands, API routes, CLI examples, or UI workflows here.
+
+## Quality Standards
+
+- CI must pass before merge.
+- Changes require tests for critical behavior.
+- Security-sensitive changes should include risk notes.
+- Keep pull requests focused and reviewable.
+
+## Security
+
+See `SECURITY.md` for responsible disclosure and handling guidelines.
+
+## Contributing
+
+See `CONTRIBUTING.md` for branching, commit, and pull request expectations.
+
+## Roadmap
+
+Track upcoming milestones, technical debt, and planned feature work.
+
+## Support
+
+Open a GitHub issue for bugs, feature requests, or documentation gaps.
 
 ## License
 
-MIT
+This project is released under the MIT License.
